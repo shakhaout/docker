@@ -24,6 +24,6 @@ Commands for pulling up docker containers in ubuntu
    - from browser go to this url: 
      localhost:8080/tree
    - Enter password: copy paste token from terminal
-6. Finally after finishing work repeat process number 3 then run this command to stop all containers:
+6. Finally after finishing work repeat process number (3) then run this command to stop all containers:
    >> $ sudo docker stop $(sudo docker ps -aq)
 
