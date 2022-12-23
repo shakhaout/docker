@@ -29,3 +29,5 @@ Commands for pulling up docker containers in ubuntu
 
 7. Get the IP Address of the docker container
    >> $ docker container inspect -f '{{ .NetworkSettings.IPAddress }}' CONTAINER_ID
+8. Using --network="host" while running the container, then 127.0.0.1 in docker container will point to the docker host,
+   >> $ docker run --gpus all --network="host" --rm -it -v $(pwd):/home/... hossain
