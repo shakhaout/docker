@@ -27,3 +27,5 @@ Commands for pulling up docker containers in ubuntu
 6. Finally after finishing work repeat process number (3) then run this command to stop all containers:
    >> $ sudo docker stop $(sudo docker ps -aq)
 
+7. Get the IP Address of the docker container
+   >> $ docker container inspect -f '{{ .NetworkSettings.IPAddress }}' CONTAINER_ID
